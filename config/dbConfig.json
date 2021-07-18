@@ -1,0 +1,9 @@
+{
+"MONGO_USERNAME" : "admin",
+"MONGO_PASSWORD" : "admin",
+"MONGO_HOSTNAME" : "127.0.0.1",
+"MONGO_PORT" : "27017",
+"MONGO_DB" : "standout",
+"SALT_ROUNDS": 7,
+"PASS_PHRASE": "standout"
+}

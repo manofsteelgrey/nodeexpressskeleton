@@ -1,0 +1,26 @@
+extends layout
+
+block content
+ .container
+   h1 Registration
+   p.lead Create an account. Already have one?
+     a(href='/login')  Login Now.
+   form(role='form', action='/users', method='post')
+     .form-group
+       label(for='fullname') Full Name 
+       input.form-control(type='text', id='fullname', name='fullname', placeholder='enter ur fullname')
+     .form-group
+       label(for='userid') Login ID
+       input.form-control(type='text', id='userid', name='userid', placeholder='enter a userid')
+     .form-group
+       label(for='password') Password
+       input.form-control(type='password', id='password', name='password', placeholder='enter a password')    
+    .form-group
+       label(for='dob') Date of Birth
+       input.form-control(type='date', id='dob', name='dob', placeholder='enter ur dob')
+    .form-group
+       label(for='gender') Gender
+       input.form-control(type='text', id='gender', name='gender', placeholder='enter ur gender')
+     button.btn.btn.btn.btn.btn-primary(type='submit') Submit
+       &nbsp;
+       a.btn.btn-default(role='button', href='/') Cancel

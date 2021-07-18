@@ -1,0 +1,15 @@
+#Set DB Password 
+use admin
+db.createUser(
+  {
+    user: "admin",
+    pwd: "admin",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+  }
+)
+
+
+#PEM Key generation
+D:\Sam\openssl-0.9.8k_X64\bin\openssl genrsa -des3 -out private.pem 2048
+D:\Sam\openssl-0.9.8k_X64\bin\openssl rsa -pubout -in private.pem -out public.pem
+PASSPHRASE : standout
